@@ -8,9 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var count = ""
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Form {
+            TextField("단어 입력 갯수", text: $count)
+            
+            Section("단어") {
+//                List {
+//                    ForEach
+//                }
+            }
+            
+        }
     }
 }
 

@@ -14,6 +14,8 @@
 		975AD0BD286BFAD4009F4F0B /* word_counterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975AD0BC286BFAD4009F4F0B /* word_counterTests.swift */; };
 		975AD0C7286BFAD4009F4F0B /* word_counterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975AD0C6286BFAD4009F4F0B /* word_counterUITests.swift */; };
 		975AD0C9286BFAD4009F4F0B /* word_counterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975AD0C8286BFAD4009F4F0B /* word_counterUITestsLaunchTests.swift */; };
+		975AD0D9286BFE58009F4F0B /* Fetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975AD0D8286BFE58009F4F0B /* Fetch.swift */; };
+		975AD0DB286C17F5009F4F0B /* WordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975AD0DA286C17F5009F4F0B /* WordList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		975AD0C2286BFAD4009F4F0B /* word-counterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "word-counterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		975AD0C6286BFAD4009F4F0B /* word_counterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = word_counterUITests.swift; sourceTree = "<group>"; };
 		975AD0C8286BFAD4009F4F0B /* word_counterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = word_counterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		975AD0D8286BFE58009F4F0B /* Fetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fetch.swift; sourceTree = "<group>"; };
+		975AD0DA286C17F5009F4F0B /* WordList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,9 @@
 		975AD0AA286BFAD3009F4F0B /* word-counter */ = {
 			isa = PBXGroup;
 			children = (
+				975AD0D7286BFC3C009F4F0B /* ViewModel */,
+				975AD0D6286BFC12009F4F0B /* Model */,
+				975AD0D5286BFC0A009F4F0B /* View */,
 				975AD0AB286BFAD3009F4F0B /* word_counterApp.swift */,
 				975AD0AD286BFAD3009F4F0B /* ContentView.swift */,
 				975AD0AF286BFAD4009F4F0B /* Assets.xcassets */,
@@ -125,6 +132,29 @@
 				975AD0C8286BFAD4009F4F0B /* word_counterUITestsLaunchTests.swift */,
 			);
 			path = "word-counterUITests";
+			sourceTree = "<group>";
+		};
+		975AD0D5286BFC0A009F4F0B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		975AD0D6286BFC12009F4F0B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				975AD0D8286BFE58009F4F0B /* Fetch.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		975AD0D7286BFC3C009F4F0B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				975AD0DA286C17F5009F4F0B /* WordList.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +288,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				975AD0AE286BFAD3009F4F0B /* ContentView.swift in Sources */,
+				975AD0DB286C17F5009F4F0B /* WordList.swift in Sources */,
+				975AD0D9286BFE58009F4F0B /* Fetch.swift in Sources */,
 				975AD0AC286BFAD3009F4F0B /* word_counterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
