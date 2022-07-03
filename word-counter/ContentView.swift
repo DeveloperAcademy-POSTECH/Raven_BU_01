@@ -11,15 +11,10 @@ struct ContentView: View {
     @State private var count = ""
     
     var body: some View {
-        Form {
-            TextField("단어 입력 갯수", text: $count)
-            
-            Section("단어") {
-//                List {
-//                    ForEach
-//                }
+        NavigationView {
+            NavigationLink(destination: ShowWordList()) {
+                Text("여기 누르면 detailView로")
             }
-            
         }
     }
 }

@@ -6,17 +6,18 @@
 //
 
 import Foundation
+import SwiftUI
 
 // MARK: https://random-word-api.herokuapp.com/word?number=10
 
-struct Word {
-    func dataRequest(count:Int) throws -> [String]? {
+struct Fetch {
+    func dataRequest(count:Binding<String>) throws -> [String]? {
         var result:[String]?
         
         // MARK: 단어 에러 핸들링
-        guard count >= 1 && count <= 15 else {
-            throw fatalError("Count Error")
-        }
+//        guard count >= 1 && count <= 15 else {
+//            throw fatalError("Count Error")
+//        }
         
         let urlString: String = "https://random-word-api.herokuapp.com/word?number=\(count)"
         let session = URLSession(configuration: .default)
@@ -48,7 +49,7 @@ struct Word {
         return result
     }
     
-    func parse(_ data: Data) -> [String] {
+    private func parse(_ data: Data) -> [String] {
         do {
            let decoder = JSONDecoder()
             return try decoder.decode([String].self, from: data)

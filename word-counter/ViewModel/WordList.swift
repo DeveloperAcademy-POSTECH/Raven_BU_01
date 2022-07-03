@@ -6,10 +6,18 @@
 //
 
 import Foundation
+import SwiftUI
 
 class WordList: ObservableObject {
     @Published var words: [String] = []
-    init(count: Int) {
-        
+    
+    
+    func getWordList(count: Binding<String>) {
+        do {
+            words = try Fetch().dataRequest(count: count) ?? []
+        } catch {
+            print(error)
+        }
     }
 }
+
